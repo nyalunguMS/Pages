@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
    
 </head>
-<body>
+<body class="contact-page">
     <h1>Contact Us</h1>
     
 
@@ -19,20 +20,25 @@
         <label for="message">Comment:</label><br>
         <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-        <button type="submit">Clear</button>
+        <button type="reset">Clear</button>
         <button type="submit">Okay</button>
     </form>
 
-     <nav style="position: sticky; bottom:0px ; overflow-x:auto">
-
-        <div style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; width: 100%; padding: 10px; box-sizing: border-box;">
-
-            <button style="width:70px; height:30px ; border-radius:25px">Home</button>
-            <button style="width:70px; height:30px; border-radius:25px">Navigate</button>
-
+    <nav class="navigation">
+        <div class="nav-bar">
+            <details class="nav-dropdown">
+                <summary class="navigate-button">
+                    <span class="hamburger" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </summary>
+                <div class="navigation-menu">
+                    <a href="index.html">Home</a>
+                </div>
+            </details>
         </div>
-        
-
     </nav>
 </body>
 </html>
